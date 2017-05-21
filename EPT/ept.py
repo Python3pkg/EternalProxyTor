@@ -31,8 +31,8 @@ class TorProxy(object):
 
 if __name__ == '__main__':
 	tor = TorProxy()
-	print tor.check_ip()
+	print(tor.check_ip())
 	tor.signal(country='Br')
 	r = tor.connection('http://google.com',method='get')
-	print r.status_code
-	print tor.check_ip()
+	print(r.status_code)
+	print(tor.check_ip())
